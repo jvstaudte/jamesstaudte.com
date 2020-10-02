@@ -1,0 +1,65 @@
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
+.navbar {
+  color: #c3ca4f;
+  border-bottom: 5px solid #c3ca4f;
+}
+
+p,
+.card-body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+section {
+  padding-top: 50px;
+  padding-bottom: 250px;
+}
+
+.social {
+  background-color: #c3ca4f;
+}
+
+a i {
+  color: #c3ca4f;
+}
+
+a:hover i {
+  /* text-decoration: none;*/
+  opacity: 0.5;
+}
+
+.social a {
+  color: white;
+  /*font-size: .8rem;*/
+}
+.footer {
+  font-size: x-small;
+  border-top: 5px solid #c3ca4f;
+}
+
+.greenbg {
+  background-color: #c3ca4f;
+}
+
+.greengray {
+  color: #767056;
+}
+
+.cyan {
+  color: #00aa9d;
+}
+
+.purple {
+  color: #7d556d;
+}
+
+.green {
+  color: #c3ca4f;
+}
