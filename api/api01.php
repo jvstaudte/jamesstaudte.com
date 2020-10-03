@@ -1,7 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="http://fonts.googleapis.com/css?family=Oswald:400,700|Open+Sans"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <style>
+        div { padding: 30px;}
+    </style>
+    
+    <title>Random Number API</title>
+  </head>
+  <body>
+
+
+</head>
 <body>
 
+<div class="container py-1 mt-1">
+  <div class="alert alert-secondary">
+    <h4>Random Number API</h4>
+			<p>This API leverages two different API's from RapidAPI. Built using PHP, it passes today's date as the number for the parameter.  The random fact comes from <a href="https://rapidapi.com/divad12/api/numbers-1">Numbers</a> and the image from <a href="https://rapidapi.com/microsoft-azure-org-microsoft-cognitive-services/api/bing-image-search1">Bing Image Search</a>
+			</p>
+  </div>
 
 <?php
 
