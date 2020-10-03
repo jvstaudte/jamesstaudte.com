@@ -1,13 +1,46 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="http://fonts.googleapis.com/css?family=Oswald:400,700|Open+Sans"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+
+    <link rel="stylesheet" href="../css/style.css" />
+
     <style>
         div { padding: 30px;}
     </style>
+    
+    <title>api_aqi_01</title>
+  </head>
+  <body>
+
+
 </head>
 <body>
-  some explanation
-
+<h2>AQI API</h2>
+<p>This API uses the Air Quality API at RapidAPI.  It is built using PHP and passes the latitude and longitude of a location in the middle of San Francisco as its parameters.  It then shows the AQI Index and the corresponding color and description.  More details can be found here: </p>
+<p>
+<a href="https://rapidapi.com/weatherbit/api/air-quality"></a>
+</p>
 
 <?php
 
