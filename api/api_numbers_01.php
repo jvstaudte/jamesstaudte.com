@@ -22,12 +22,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../css/bootstrap.css" />
-
     <link rel="stylesheet" href="../css/style.css" />
-
-    <style>
-        div { padding: 30px;}
-    </style>
     
     <title>Random Number API</title>
   </head>
