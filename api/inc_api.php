@@ -1,7 +1,6 @@
 
 <?php
 
-  $curlhead1 = "x-rapidapi-host: air-quality.p.rapidapi.com";
-  $curlhead2 = "x-rapidapi-key: ed8f78e92emshcd5e61e646dff65p146443jsnb60277aeea81" ;
+  $curlheadkey = "x-rapidapi-key: 122a5698f0msh8c05d7185d4c102p1ddef8jsn7966a5cf6bbf" ;
 
 ?>

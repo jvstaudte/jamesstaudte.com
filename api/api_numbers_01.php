@@ -41,11 +41,17 @@
 
 <?php
 include 'inc_api.php';
+
+//vars
+$day = date("j");
+$month = date("n");
+
 //start numbers search
+$myCurlFact = "https://numbersapi.p.rapidapi.com/" . $month . "/" . $day . "/date?fragment=true&json=true";
 $curl = curl_init();
 
 curl_setopt_array($curl, array(
-	CURLOPT_URL => "https://numbersapi.p.rapidapi.com/4/21/date?fragment=true&json=true",
+	CURLOPT_URL => $myCurlFact,
 	CURLOPT_RETURNTRANSFER => true,
 	CURLOPT_FOLLOWLOCATION => true,
 	CURLOPT_ENCODING => "",
@@ -54,8 +60,8 @@ curl_setopt_array($curl, array(
 	CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
 	CURLOPT_CUSTOMREQUEST => "GET",
 	CURLOPT_HTTPHEADER => array(
-		$curlhead1,
-		$curlhead2 
+		"x-rapidapi-host: numbersapi.p.rapidapi.com",
+		$curlheadkey 
 	),
 ));
 
@@ -78,7 +84,7 @@ $myReponse1 = json_decode($response, true);
 echo "<p>Today is: " . date("l, jS \of F Y,  h:i:s A e") . "</p>";
 echo "<p>On this date in " .  $myReponse1['year'] . "...<br />&nbsp;&nbsp;";
 echo $myReponse1['text'] . "</p>";
-$day = date("j");
+
 
 //need 543x362px img
 
@@ -88,11 +94,11 @@ $day = date("j");
 
 
 //start image search
-$myCurl = "https://bing-image-search1.p.rapidapi.com/images/search?count=2&safeSearch=strict&q=" . $day;
+$myCurlImg = "https://bing-image-search1.p.rapidapi.com/images/search?count=2&safeSearch=strict&q=" . $day;
 $curl = curl_init();
 
 curl_setopt_array($curl, array(
-	CURLOPT_URL => $myCurl,
+	CURLOPT_URL => $myCurlImg,
 	CURLOPT_RETURNTRANSFER => true,
 	CURLOPT_FOLLOWLOCATION => true,
 	CURLOPT_ENCODING => "",
@@ -102,7 +108,7 @@ curl_setopt_array($curl, array(
 	CURLOPT_CUSTOMREQUEST => "GET",
 	CURLOPT_HTTPHEADER => array(
 		"x-rapidapi-host: bing-image-search1.p.rapidapi.com",
-		"x-rapidapi-key: ed8f78e92emshcd5e61e646dff65p146443jsnb60277aeea81"
+		$curlheadkey
 	),
 ));
 

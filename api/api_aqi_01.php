@@ -60,8 +60,8 @@ curl_setopt_array($curl, array(
 	CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
 	CURLOPT_CUSTOMREQUEST => "GET",
 	CURLOPT_HTTPHEADER => array(
-		$curlhead1,
-		$curlhead2 
+		"x-rapidapi-host: air-quality.p.rapidapi.com",
+		$curlheadkey 
 	),
 ));
 
