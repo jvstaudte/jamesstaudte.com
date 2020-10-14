@@ -39,7 +39,7 @@
 
 <div class="container py-1 mt-1">
   <div class="alert alert-secondary">
-    <h4>1AQI API</h4>
+    <h4>AQI API</h4>
       <p>This API uses the Air Quality API at RapidAPI.  It is built using PHP and passes the latitude and longitude of a location in the middle of San Francisco as its parameters.  It then shows the AQI Index and the corresponding color and description.  More details can be found here: <a href="https://rapidapi.com/weatherbit/api/air-quality">Air Quality</a></p>
   </div>
 
